@@ -123,7 +123,7 @@ def all_clients(cur):
 
 
 if __name__ == '__main__':
-    with psycopg2.connect(database="clients_db", user="postgres", password="Bujhm2022") as conn:
+    with psycopg2.connect(database="clients_db", user="postgres", password="postgres") as conn:
         with conn.cursor() as cur:
             cur.execute("""
                         DROP TABLE phones;
